@@ -14,7 +14,7 @@ const connection = {
   dialectmodel: require('mysql2'),
   dialectOptions: {
     ssl: process.env.SSL_MODE === 'REQUIRED' ? {
-      rejectUnauthorized: true
+      rejectUnauthorized: false
     } : false
   },
 };
